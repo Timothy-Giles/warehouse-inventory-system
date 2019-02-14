@@ -1,0 +1,35 @@
+button {
+    background-color: rgb(48, 48, 97);
+    color: white;
+    font-weight: 800;
+    border-radius: 25%;
+}
+
+#nav {
+    margin: 10px;
+    float: right;
+}
+
+body {
+    background: url(https://cdn.multichannelmerchant.com/wp-content/uploads/2018/03/real-warehouse-robots-feature.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom 50px;
+}
+
+.center {
+    text-align: center;
+  }
+
+* {
+    font-family: system-ui;
+}
+
+h1 {
+    font-size: 200%;
+    font-stretch: extra-expanded;
+    background-color: rgb(94, 89, 89);
+    border: 4mm ridge rgba(57, 57, 148, 0.6);
+}
+
+
+

@@ -1,0 +1,37 @@
+table, tr, td {
+    border: solid 3px;
+    outline-offset: 0.5rem;
+}
+
+tr, td{
+    background-color: rgb(197, 73, 51);
+
+}
+
+#header {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlC_4Tu1t6rDFwRjC6Un_E490J2HLGdhLi0IQp9sXTSj93k224mQ);
+    position: relative;
+    background-size: contain;
+    background-position: cover;
+    height: 200px;
+}
+
+table {
+    
+}
+
+.center {
+    text-align: center;
+  }
+
+#nav {
+    float: right;
+}
+
+h1 {
+    position: fixed;
+    font-size: 350%;
+    font-family: 'Segoe UI';
+    color: rgb(197, 73, 51);
+    
+}

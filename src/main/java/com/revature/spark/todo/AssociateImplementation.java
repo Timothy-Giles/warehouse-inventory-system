@@ -23,7 +23,15 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double sum(List<Product> products) {
-		return null;
+		
+		int listSize = products.size();
+		double sum = 0;
+		
+		for (int i=0; i<listSize; i++) {
+			sum += (products.get(i).getPrice() * products.get(i).getQuantity());
+//			System.out.println(sum);
+		}
+		return sum;
 	}
 
 	/**
@@ -33,7 +41,18 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double min(List<Product> products) {
-		return null;
+		int i = 0;
+		int listSize = products.size();
+		double holder = 2999999;
+		while (i< listSize) {
+			if (products.get(i).getPrice() < holder) {
+				holder = (products.get(i).getPrice());
+				System.out.print(holder);
+				
+			}
+			i++;
+		}
+		return holder;	
 	}
 
 	/**
@@ -43,7 +62,18 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double max(List<Product> products) {
-		return null;
+		int i = 0;
+		int listSize = products.size();
+		double holder = 0;
+		while (i< listSize) {
+			if (products.get(i).getPrice() > holder) {
+				holder = (products.get(i).getPrice());
+				System.out.print(holder);
+				
+			}
+			i++;
+		}
+		return holder;	
 	}
 
 	/**
@@ -53,7 +83,14 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double avg(List<Product> products) {
-		return null;
+		
+		int listSize = products.size();
+		double sum = 0;
+		
+		for (int i=0; i<listSize; i++) {
+			sum += products.get(i).getPrice();
+		}	
+		return sum/listSize;
 	}
 
 	/**
@@ -63,7 +100,30 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double median(List<Product> products) {
-		return null;
+		double[] productsArray = new double[products.size()];
+		double median = 0;
+		
+		for(int i=0; i<products.size(); i++) {
+			productsArray[i] = products.get(i).getPrice();
+		}
+		//bubble sort products
+		for(int i=0; i<productsArray.length-1; i++) {
+			for(int j=0; j<productsArray.length-1-i; j++) {
+				if(productsArray[j] > productsArray[j+1]) {
+					double temp = productsArray[j];
+					productsArray[j] = productsArray[j+1];
+					productsArray[j+1] = temp;
+				}
+			}
+		}
+		//If even split in half and take the average if the two middle elements
+		if(products.size()%2 == 0) {
+			median = ((double)productsArray[products.size()/2] + (double)productsArray[((products.size()/2)-1)])/2;
+		//if Odd, just take middle element
+		} else {
+			median = (double)productsArray[products.size()/2];
+		}
+		return median;
 	}
 
 	/**

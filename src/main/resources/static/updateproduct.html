@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Warehouse Solutions</title>
+	<meta charset="utf-8" name="homepage" content= "user will be able to view warehouse, create, update, and delete a product">
+</head>
+<body>
+	<div id="nav">
+		<a href="index.html"><button id="Home">Home</button></a>
+		<a href="createproduct.html"><button id="create">Create</button></a>
+		<a href="updateproduct.html"><button id="update">Update</button></a>
+		<a href="warehouse.html"><button id="warehouse">Warehouse</button></a>
+	</div>
+	<h1 class="text-center">My warehouse</h1>
+    <hr>
+    <link rel="stylesheet" href="inputpage.css">
+    <form>
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Product</label>
+            <input type="text" class="form-control" id="validationDefault01"  required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault02">ID</label>
+            <input type="number" class="form-control" id="validationDefault02" placeholder="ID"  required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Price</label>
+            <input type="number" class="form-control" id="validationDefault03" placeholder="Price"  required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Quantity</label>
+            <input type="number" class="form-control" id="validationDefault04" placeholder="Quantity" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Warehouse Address</label>
+            <input type="text" class="form-control" id="validationDefault05" placeholder="Warehouse Address" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Warehouse ID</label>
+            <input type="number" class="form-control" id="validationDefault06" placeholder="Warehouse ID" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Warehouse Name</label>
+            <input type="text" class="form-control" id="validationDefault07"  required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+        </div>
+    </div>
+    <button id="updatebutton" class="btn btn-primary" type="submit">Update</button>
+    </form>
+</body>
+<script src="project-1put.js"></script>
+
+</html>
